@@ -26,6 +26,12 @@
         opacity: 1;
     }
 
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+
 </style>
 <nav class="navbar navbar-default">
     <div class="container">
@@ -35,11 +41,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Gautham Velchuru</a>
+            <a class="navbar-brand" href="index.html">Home</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="projects.html">Projects</a></li>
+                <
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="projects.html">Projects
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="face_mapper.html">FaceMapper</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

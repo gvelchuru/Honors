@@ -29,6 +29,24 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    .slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #slide0 {
+        background-image: url(coconut_tall.jpg);
+
+    }
+
+    #slide1 {
+        background-image: url(sample_face.png);
+    }
+
+    #slide2 {
+        background-image: url(coconut_face_rec_tall.png);
+    }
 </style>
 
 <script>
@@ -64,25 +82,18 @@
     </div>
 </nav>
 <body>
-<div id="fullpage">
-    <div class="section fp-auto-height">
-        <div class="container-fluid text-center">
-            <h3>FaceMapper</h3>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img class="faceimg img-responsive" src="coconut_tall.jpg">
-                </div>
-                <div class="col-sm-4">
-                    <img class="faceimg img-responsive" src="sample_face.png">
-                </div>
-                <div class="col-sm-4">
-                    <img class="faceimg img-responsive" src="coconut_face_rec_tall.png">
-                </div>
-            </div>
+<div id="fullpage" class="fullpage-wrapper">
+    <div class="section">
+        <div class="slide" id="slide0">
+        </div>
+        <div class="slide" id="slide1">
+        </div>
+        <div class="slide" id="slide2">
         </div>
     </div>
-    <div class="section fp-auto-height">
+    <div class="section">
         <div class="container-fluid bg-1 text-center">
+            <h1> FaceMapper </h1>
             <p style="color: #403f41; font-size: 20px;"> The FaceMapper annotation tool is used for annotating
                 faces with landmarks to be used in training facial
                 landmark recognition algorithms.

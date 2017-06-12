@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullpage.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fullpage.js"></script>
 </head>
 
 <style>
@@ -28,6 +31,13 @@
     }
 </style>
 
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            sectionsColor: ['white', 'red']
+        });
+    });
+</script>
 
 <nav class="navbar navbar-default">
     <div class="container">
@@ -54,33 +64,40 @@
     </div>
 </nav>
 <body>
-<div class="container-fluid text-center">
-    <h3>FaceMapper</h3>
-    <div class="row">
-        <div class="col-sm-4">
-            <img class="faceimg img-responsive" src="coconut_tall.jpg">
+<div id="fullpage">
+    <div class="section fp-auto-height">
+        <div class="container-fluid text-center">
+            <h3>FaceMapper</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="faceimg img-responsive" src="coconut_tall.jpg">
+                </div>
+                <div class="col-sm-4">
+                    <img class="faceimg img-responsive" src="sample_face.png">
+                </div>
+                <div class="col-sm-4">
+                    <img class="faceimg img-responsive" src="coconut_face_rec_tall.png">
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4">
-            <img class="faceimg img-responsive" src="sample_face.png">
-        </div>
-        <div class="col-sm-4">
-            <img class="faceimg img-responsive" src="coconut_face_rec_tall.png">
+    </div>
+    <div class="section fp-auto-height">
+        <div class="container-fluid bg-1 text-center">
+            <p style="color: #403f41; font-size: 20px;"> The FaceMapper annotation tool is used for annotating
+                faces with landmarks to be used in training facial
+                landmark recognition algorithms.
+                It includes a script to transform the output into input used by Dlib. The tool is part of a larger
+                project
+                involving the creation of a pipeline
+                to combine information from naturalistic ECoG and AV recordings to establish correlations between facial
+                pose,
+                speech, and brainwave data.</p>
+            <blockquote class="embedly-card"><h4><a
+                    href="http://github.com/gvelchuru/FaceMapper">gvelchuru/FaceMapper</a></h4>
+                <p>FaceMapper - Face annotation tool for neural network training</p></blockquote>
+            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
         </div>
     </div>
 </div>
-<div class="container-fluid bg-1 text-center">
-    <p style="color: #403f41; font-size: 20px;"> The FaceMapper annotation tool is used for annotating
-        faces with landmarks to be used in training facial
-        landmark recognition algorithms.
-        It includes a script to transform the output into input used by Dlib. The tool is part of a larger project
-        involving the creation of a pipeline
-        to combine information from naturalistic ECoG and AV recordings to establish correlations between facial pose,
-        speech, and brainwave data.</p>
-    <blockquote class="embedly-card"><h4><a
-            href="http://github.com/gvelchuru/FaceMapper">gvelchuru/FaceMapper</a></h4>
-        <p>FaceMapper - Face annotation tool for neural network training</p></blockquote>
-    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-</div>
-
 </body>
 </html>

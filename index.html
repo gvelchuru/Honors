@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullpage.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fullpage.js"></script>
 </head>
 
 <style>
@@ -18,6 +21,17 @@
     .bg-2 {
         background-color: #474e5d;
         color: #ffffff;
+    }
+
+    .facemap {
+        width: 100%;
+        background-image: url("coconut_tall.jpg"), url("sample_face.png"), url("coconut_face_rec_tall.png");
+        background-size: 33%;
+        background-position: left, center, right;
+        background-repeat: no-repeat;
+        /*height: 100px;
+        transition: all 1s;
+        opacity: .5;*/
     }
 
     .container-fluid {
@@ -69,6 +83,11 @@
         padding: 20px;
     }
 
+    a, a:hover {
+        color: black;
+        text-decoration: none;
+    }
+
     /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
     @media screen and (max-height: 450px) {
         .sidenav {
@@ -80,6 +99,15 @@
         }
     }
 </style>
+
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            sectionsColor: ['red', 'grey']
+        });
+    });
+</script>
+
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
@@ -132,26 +160,34 @@
 <span onclick="openNav()">open</span>
 -->
 
-<div id="main">
-    <div class="container-fluid bg-1 text-center">
+<div id="fullpage">
+    <div class="section fp-auto-height">
+        <div class="container-fluid text-center">
         <img src="cherry_cut.png" style="display:inline" class="img-responsive img-rounded" alt="Me" width="350"
              height="(1225/2072) * 350">
-        <h3> I'm Gautham.</h3>
-    </div>
-    <div class="container-fluid bg-2 text-center">
-        <h3> Scientist, developer, dreamer.</h3>
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-            <p>From the fourth phase of water to novel computer vision algorithms, no project is too lofty. Currently
-                studying
-                Computer Science with Interdisciplinary Honors at the University of Washington. Interested in the
-                intersection of computer science and neuroscience.</p>
-            <a href="projects.html" class="btn btn-default btn-lg">My projects</a>
-            <a href="https://www.linkedin.com/pub/gautham-velchuru/a3/988/2a4">
-                <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160"
-                     height="33"
-                     border="0" alt="View Gautham Velchuru's profile on LinkedIn">
-            </a>
+            <h3> I'm Gautham - Scientist, developer, and dreamer.</h3>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p>Exploring the use of novel computer vision and machine learning algorithms to learn more about the
+                    human brain. Currently
+                    studying
+                    Computer Science with Interdisciplinary Honors at the University of Washington. </p>
+                <a href="https://www.linkedin.com/pub/gautham-velchuru/a3/988/2a4">
+                    <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="160"
+                         height="33"
+                         border="0" alt="View Gautham Velchuru's profile on LinkedIn">
+                </a>
+            </div>
         </div>
+    </div>
+    <div class="section fp-auto-height">
+        <a href="face_mapper.html">
+            <div class="container-fluid text-center">
+                <h1>FaceMapper</h1>
+                <p> Pipeline for using facial recognition algorithms on novel data</p>
+                <div class="container-fluid facemap text-center">
+                </div>
+            </div>
+        </a>
     </div>
 </div>
 </body>

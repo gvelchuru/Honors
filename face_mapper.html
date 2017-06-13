@@ -14,7 +14,7 @@
 
 <style>
     .bg-1 {
-        background-color: #ff1c2b;
+        background-color: inherit;
     }
 
     .faceimg {
@@ -30,30 +30,14 @@
         padding-right: 15px;
     }
 
-    .slide {
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #slide0 {
-        background-image: url(coconut_tall.jpg);
-
-    }
-
-    #slide1 {
-        background-image: url(sample_face.png);
-    }
-
-    #slide2 {
-        background-image: url(coconut_face_rec_tall.png);
-    }
 </style>
 
 <script>
     $(document).ready(function () {
         $('#fullpage').fullpage({
-            sectionsColor: ['black', 'red']
+            sectionsColor: ['green', 'red', 'white'],
+            navigation: true,
+            slidesNavigation: true
         });
     });
 </script>
@@ -72,7 +56,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://www.gauthamvelchuru.weebly.com">UW Honors Portfolio</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="projects.html">Projects
+                    <a class="dropdown-toggle" data-toggle="dropdown">Projects
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="face_mapper.html">FaceMapper</a></li>
@@ -85,17 +69,9 @@
 <body>
 <div id="fullpage" class="fullpage-wrapper">
     <div class="section">
-        <div class="slide" id="slide0">
-        </div>
-        <div class="slide" id="slide1">
-        </div>
-        <div class="slide" id="slide2">
-        </div>
-    </div>
-    <div class="section">
         <div class="container-fluid bg-1 text-center">
             <h1> FaceMapper </h1>
-            <p style="color: #403f41; font-size: 20px;"> The FaceMapper annotation tool is used for annotating
+            <h2> The FaceMapper annotation tool is used for annotating
                 faces with landmarks to be used in training facial
                 landmark recognition algorithms.
                 It includes a script to transform the output into input used by Dlib. The tool is part of a larger
@@ -103,12 +79,56 @@
                 involving the creation of a pipeline
                 to combine information from naturalistic ECoG and AV recordings to establish correlations between facial
                 pose,
-                speech, and brainwave data.</p>
-            <blockquote class="embedly-card"><h4><a
-                    href="http://github.com/gvelchuru/FaceMapper">gvelchuru/FaceMapper</a></h4>
-                <p>FaceMapper - Face annotation tool for neural network training</p></blockquote>
-            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+                speech, and brainwave data.</h2>
         </div>
+    </div>
+    <div class="section">
+        <div class="slide">
+            <div class="container">
+                <h1> Step 1</h1>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2> Step 1: Procure novel training data </h2>
+                    </div>
+                    <div class="col-sm-7">
+                        <img class="img-responsive" src="coconut_tall.jpg" alt="Step 1 Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="container">
+                <h1> Step 2</h1>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2> Step 2: Use FaceMapper to perform annotation. Results can be input into a object detection
+                            program such as Dlib.</h2>
+                    </div>
+                    <div class="col-sm-7">
+                        <img class="img-responsive" src="sample_face.png" alt="Step 2 Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="slide2">
+            <div class="container">
+                <h1> Step 3</h1>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2> Step 3: Perform face recognition tasks</h2>
+                    </div>
+                    <div class="col-sm-7">
+                        <img class="img-responsive" src="coconut_face_rec_tall.png" alt="Step 3 Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <blockquote class="embedly-card"><h4><a
+                href="http://github.com/gvelchuru/FaceMapper">gvelchuru/FaceMapper</a></h4>
+            <p>FaceMapper - Face annotation tool for neural network training</p></blockquote>
+        <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
     </div>
 </div>
 </body>

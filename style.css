@@ -1,0 +1,49 @@
+/*.bg-1 {*/
+/*background-color: #ff1c2b;*/
+/*color: #ffffff;*/
+/*}*/
+
+/*.bg-2 {*/
+/*background-color: #474e5d;*/
+/*color: #ffffff;*/
+/*}*/
+
+/*.facemap {*/
+/*width: 100%;*/
+/*background-image: url("coconut_tall.jpg"), url("sample_face.png"), url("coconut_face_rec_tall.png");*/
+/*background-size: 33%;*/
+/*background-position: left, center, right;*/
+/*background-repeat: no-repeat;*/
+/*!*height: 100px;*/
+/*transition: all 1s;*/
+/*opacity: .5;*!*/
+/*}*/
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#navMenu {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+a, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.faceimg {
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 70px 50px;
+}
+
+.row {
+    padding-left: 15px;
+    padding-right: 15px;
+}

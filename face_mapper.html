@@ -11,66 +11,29 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.fullpage.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<style>
-    .bg-1 {
-        background-color: inherit;
-    }
-
-    .faceimg {
-        width: 100%;
-    }
-
-    .container-fluid {
-        padding: 70px 50px;
-    }
-
-    .row {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-</style>
 
 <script>
     $(document).ready(function () {
         $('#fullpage').fullpage({
             sectionsColor: ['green', 'red', 'white'],
             navigation: true,
-            slidesNavigation: true
+            slidesNavigation: true,
+            anchors: ['summary', 'steps', 'GitHub'],
         });
     });
 </script>
 
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Home</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://www.gauthamvelchuru.weebly.com">UW Honors Portfolio</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown">Projects
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="face_mapper.html">FaceMapper</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<body>
+
+<nav class="navbar navbar-default" id="navMenu"></nav>
+<script src="navScript.js"></script>
+
+<body style="overflow: hidden">
 <div id="fullpage" class="fullpage-wrapper">
     <div class="section">
-        <div class="container-fluid bg-1 text-center">
+        <div class="container-fluid text-center">
             <h1> FaceMapper </h1>
             <h2> The FaceMapper annotation tool is used for annotating
                 faces with landmarks to be used in training facial
@@ -89,7 +52,7 @@
                 <h1> Step 1</h1>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2> Step 1: Procure novel training data </h2>
+                        <h2> Procure novel training data </h2>
                     </div>
                     <div class="col-sm-7">
                         <img class="img-responsive" src="coconut_tall.jpg" alt="Step 1 Image">
@@ -102,7 +65,7 @@
                 <h1> Step 2</h1>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2> Step 2: Use FaceMapper to perform annotation. Results can be input into a object detection
+                        <h2> Use FaceMapper to perform annotation. Results can be input into a object detection
                             program such as Dlib.</h2>
                     </div>
                     <div class="col-sm-7">
@@ -116,7 +79,7 @@
                 <h1> Step 3</h1>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2> Step 3: Perform face recognition tasks</h2>
+                        <h2> Perform face recognition tasks on new data</h2>
                     </div>
                     <div class="col-sm-7">
                         <img class="img-responsive" src="coconut_face_rec_tall.png" alt="Step 3 Image">

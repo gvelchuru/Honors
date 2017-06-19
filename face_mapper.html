@@ -18,13 +18,23 @@
 <script>
     $(document).ready(function () {
         $('#fullpage').fullpage({
-            sectionsColor: ['green', 'red', 'white'],
+            sectionsColor: ['black', 'black', 'white'],
             navigation: true,
             slidesNavigation: true,
             anchors: ['summary', 'steps', 'GitHub'],
         });
     });
 </script>
+
+<style>
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+    }
+</style>
 
 
 <nav class="navbar navbar-default" id="navMenu"></nav>
@@ -90,10 +100,10 @@
     </div>
     <div class="section fp-auto-height">
         <div class="container-fluid text-center">
-            <h1> Download or clone the project on GitHub!</h1>
+            <h1 style="color:black"> Download or clone the project on GitHub!</h1>
             <blockquote class="embedly-card"><h4><a
                     href="http://github.com/gvelchuru/FaceMapper">gvelchuru/FaceMapper</a></h4>
-                <p>FaceMapper - Face annotation tool for neural network training</p></blockquote>
+                <p style="color:white">FaceMapper - Face annotation tool for neural network training</p></blockquote>
             <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
         </div>
     </div>

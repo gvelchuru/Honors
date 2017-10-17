@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108230118-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108230118-1');
+    </script>
     <title> Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +31,7 @@
 <script>
     $(document).ready(function () {
         $('#fullpage').fullpage({
-            sectionsColor: ['black', 'white'],
+            sectionsColor: ['white', 'black'],
             navigation: true,
             navigationPosition: 'right'
         });
@@ -34,9 +47,9 @@
         <div class="container-fluid text-center">
         <img src="cherry_cut.png" style="display:inline" class="img-responsive img-rounded" alt="Me" width="350"
              height="(1225/2072) * 350">
-            <h3 style="color: white;"> I'm Gautham - Scientist, developer, and dreamer.</h3>
+            <h3 style="color: black;"> I'm Gautham - Scientist, developer, and dreamer.</h3>
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p style="color:white">Exploring the use of novel computer vision and machine learning algorithms to
+                <p style="color:black">Exploring the use of novel computer vision and machine learning algorithms to
                     learn more about the
                     human brain. Currently
                     studying
@@ -56,8 +69,8 @@
     <div class="section fp-auto-height">
         <a href="face_mapper.html">
             <div class="container-fluid text-center">
-                <h1>FaceMapper</h1>
-                <p> Pipeline for using facial recognition algorithms on novel data</p>
+                <h1 style="color: white">FaceMapper</h1>
+                <p style="color: white"> Pipeline for using facial recognition algorithms on novel data</p>
             </div>
         </a>
     </div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108230118-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108230118-1');
+    </script>
+    <title>FaceMapper</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullpage.css"/>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fullpage.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            sectionsColor: ['black', 'white'],
+            navigation: true,
+            slidesNavigation: true,
+            anchors: ['summary', 'GitHub']
+        });
+    });
+</script>
+
+<style>
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+    }
+</style>
+
+
+<nav class="navbar navbar-default" id="navMenu"></nav>
+<script src="navScript.js"></script>
+
+
+<body>
+<div id="fullpage" class="fullpage-wrapper">
+    <div class="section">
+        <div class="container">
+            <h1> CrimeViz</h1>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h2> A tool for predicting future crime hotspots based on past data for informed walking, driving,
+                        and parking.</h2>
+                </div>
+                <div class="col-sm-7">
+                    <img class="img-responsive" src="crimeviz.png" alt="CrimeViz Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-auto-height">
+        <div class="container-fluid text-center">
+            <h1 style="color:black"> Download or clone the project on GitHub!</h1>
+            <blockquote class="embedly-card"><h4><a
+                    href="https://github.com/gvelchuru/CrimeViz.ml/">gvelchuru/CrimeViz</a></h4>
+                <p style="color:white">DubHacks 2017 repo</p>
+            </blockquote>
+            <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        </div>
+    </div>
+</div>
+</body>
+</html>

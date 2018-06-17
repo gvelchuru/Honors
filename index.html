@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="gruvbox-dark.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="jquery.fullpage.css"/>
@@ -31,57 +31,71 @@
 <script>
     $(document).ready(function () {
         $('#fullpage').fullpage({
-            sectionsColor: ['white', 'black', 'white'],
-            navigation: true,
-            navigationPosition: 'right'
+            sectionsColor: ["#282828", "#282828", "#282828"],
+            navigation: false,
+            // navigationPosition: 'right'
         });
     });
 </script>
 
-<nav class="navbar navbar-default" id="navMenu"></nav>
-<script src="navScript.js"></script>
+<!--<nav class="navbar navbar-default" id="navMenu"></nav>-->
+<!--<script src="navScript.js"></script>-->
+
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+    <ul class="main-nav" id="js-menu">
+        <li>
+            <a class="active" href="#">Home</a>
+        </li>
+        <li>
+            <a class="nav-links" href="#">Year 1</a>
+        </li>
+        <li>
+            <a class="nav-links" href="#">Year 2</a>
+        </li>
+        <li>
+            <a class="nav-links" href="#">Year 3</a>
+        </li>
+        <li>
+            <a class="nav-links" href="#">Year 4</a>
+        </li>
+    </ul>
+</nav>
 
 <body>
 <div id="fullpage">
     <div class="section">
         <div class="container-fluid text-center">
-        <img src="cherry_cut.png" style="display:inline" class="img-responsive img-rounded" alt="Me" width="350"
-             height="(1225/2072) * 350">
-            <h3 style="color: black;"> I'm Gautham - Scientist, developer, and dreamer.</h3>
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p style="color:black">Exploring the use of novel computer vision and machine learning algorithms to
-                    learn more about the
-                    human brain. Currently
-                    studying
-                    Computer Science with Interdisciplinary Honors at the University of Washington. </p>
-                <a href="https://www.linkedin.com/pub/gautham-velchuru/a3/988/2a4">
-                    <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
-                </a>
-                <a href="mailto:gvelchuru@gmail.com">
-                    <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.github.com/gvelchuru">
-                    <i class="fa fa-github fa-5x" aria-hidden="true"></i>
-                </a>
-            </div>
+            <img alt="Me" class="img-responsive img-rounded" height="(1225/2072) * 250" src="cherry_cut.png"
+                 style="display:inline"
+                 width="250">
+            <blockquote cite="Ayn Rand">
+                If you do not know, the thing is not to be afraid, but to learn.
+            </blockquote>
         </div>
     </div>
-    <div class="section fp-auto-height">
-        <a href="face_mapper.html">
-            <div class="container-fluid text-center">
-                <h1 style="color: white">FaceMapper</h1>
-                <p style="color: white"> Pipeline for using facial recognition algorithms on novel data</p>
-            </div>
-        </a>
-    </div>
-    <div class="section fp-auto-height">
-        <a href="crime_viz.html">
-            <div class="container-fluid text-center">
-                <h1 style="color: black"> CrimeViz</h1>
-                <p style="color: black"> DubHacks 2017 project to find safe paths and parking spots</p>
-            </div>
-        </a>
-    </div>
+    <!--<div class="section fp-auto-height">-->
+    <!--<a href="year1.html">-->
+    <!--<div class="container-fluid text-center">-->
+    <!--<h1 style="color: white">Year 1</h1>-->
+    <!--<p style="color: white">The Naive Pre-Med</p>-->
+    <!--</div>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<div class="section fp-auto-height">-->
+    <!--<a href="year2.html">-->
+    <!--<div class="container-fluid text-center">-->
+    <!--<h1 style="color: black">Year 2</h1>-->
+    <!--<p style="color: black">Questioning myself</p>-->
+    <!--</div>-->
+    <!--</a>-->
+    <!--</div>-->
 </div>
+
 </body>
+<footer>
+
+</footer>
 </html>

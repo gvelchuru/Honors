@@ -110,6 +110,7 @@ blockquote:after {
   padding-top: 0;
   border-top-width: 0;
   border-bottom-width: 0;
+    min-height: 20px;
 }
 
 .main-nav {
@@ -175,6 +176,10 @@ blockquote:after {
     -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
   }
+
+    ul {
+        margin: 0;
+    }
 
   .nav-links {
     margin-left: 20px;

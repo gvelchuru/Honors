@@ -1,0 +1,254 @@
+// ----------------------------------------------------------------------------
+// Dark Mode
+// ----------------------------------------------------------------------------
+
+// Dark Background
+$gb-dm-bg0: #282828;
+$gb-dm-bg0-hard: #1d2021;
+$gb-dm-bg0-soft: #32302f;
+$gb-dm-bg1: #3c3836;
+$gb-dm-bg2: #504945;
+$gb-dm-bg3: #665c54;
+$gb-dm-bg4: #7c6f64;
+
+// Dark Foreground
+$gb-dm-fg0: #fbf1c7;
+$gb-dm-fg1: #ebdbb2;
+$gb-dm-fg2: #d5c4a1;
+$gb-dm-fg3: #bdae93;
+$gb-dm-fg4: #a89984;
+
+// Dark Colors
+$gb-dm-dark-red: #cc241d;
+$gb-dm-dark-green: #98971a;
+$gb-dm-dark-yellow: #d79921;
+$gb-dm-dark-blue: #458588;
+$gb-dm-dark-purple: #b16286;
+$gb-dm-dark-aqua: #689d6a;
+$gb-dm-dark-orange: #d65d0e;
+$gb-dm-dark-gray: #928374;
+
+$gb-dm-light-red: #fb4934;
+$gb-dm-light-green: #b8bb26;
+$gb-dm-light-yellow: #fabd2f;
+$gb-dm-light-blue: #83a598;
+$gb-dm-light-purple: #d3869b;
+$gb-dm-light-aqua: #8ec07c;
+$gb-dm-light-orange: #f38019;
+$gb-dm-light-gray: #a89984;
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,400,700);
+
+
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 200;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Light/complete/Fura%20Code%20Light%20Nerd%20Font%20Complete.otf?raw=true") format('opentype');
+}
+
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 400;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fura%20Code%20Regular%20Nerd%20Font%20Complete.otf?raw=true") format('opentype');
+}
+
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 450;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Retina/complete/Fura%20Code%20Retina%20Nerd%20Font%20Complete.otf?raw=true") format('opentype');
+}
+
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 600;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Medium/complete/Fura%20Code%20Medium%20Nerd%20Font%20Complete.otf?raw=true") format('opentype');
+}
+
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 800;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Bold/complete/Fura%20Code%20Bold%20Nerd%20Font%20Complete.otf?raw=true") format('opentype');
+}
+
+p {
+  font-family: "Fura Code", serif;
+  font-weight: 200;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#navMenu {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+a, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.faceimg {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 70px 50px;
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: $gb-dm-light-blue;
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+  color: $gb-dm-fg0;
+}
+
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $gb-dm-bg0;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: $gb-dm-dark-gray;
+  text-align: center;
+}
+
+blockquote:after {
+  content: "\2013 \2003" attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: $gb-dm-dark-orange;
+}
+
+.navbar {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  //background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  background-color: $gb-dm-bg1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  padding-top: 8px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  //position:fixed;
+  //bottom:0;
+  padding-top: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+  padding-left: 20px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 0;
+    height: 20px;
+    align-items: center;
+    padding-top: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .main-nav li {
+    margin: 0;
+    //background-image: url(crimeviz.png);
+    background-color: $gb-dm-bg2;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+
+  .nav-links {
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.chevron {
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+:export {
+  pageBackground: $gb-dm-bg0
+}

@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:300,400,700);
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 200;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Light/complete/Fura%20Code%20Light%20Nerd%20Font%20Complete.otf?raw=true") format("opentype");
+}
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 400;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fura%20Code%20Regular%20Nerd%20Font%20Complete.otf?raw=true") format("opentype");
+}
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 450;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Retina/complete/Fura%20Code%20Retina%20Nerd%20Font%20Complete.otf?raw=true") format("opentype");
+}
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 600;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Medium/complete/Fura%20Code%20Medium%20Nerd%20Font%20Complete.otf?raw=true") format("opentype");
+}
+@font-face {
+  font-family: "Fura Code";
+  font-weight: 800;
+  src: url("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Bold/complete/Fura%20Code%20Bold%20Nerd%20Font%20Complete.otf?raw=true") format("opentype");
+}
+p {
+  font-family: "Fura Code", serif;
+  font-weight: 200;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#navMenu {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+a, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.faceimg {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 70px 50px;
+}
+
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #83a598;
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+  color: #fbf1c7;
+}
+
+blockquote:before {
+  content: "“";
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #282828;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em "PT Sans", sans-serif;
+  color: #928374;
+  text-align: center;
+}
+
+blockquote:after {
+  content: "– " attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: #d65d0e;
+}
+
+.navbar {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #3c3836;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  padding-top: 8px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+  padding-left: 20px;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 0;
+    height: 20px;
+    align-items: center;
+    padding-top: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .main-nav li {
+    margin: 0;
+    background-color: #504945;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+
+  .nav-links {
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+.nav-links:hover {
+    color: white;
+  }
+}
+.chevron {
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+:export {
+  pageBackground: #282828;
+}
+
+/*# sourceMappingURL=gruvbox-dark.css.map */

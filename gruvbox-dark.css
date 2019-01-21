@@ -29,7 +29,7 @@ p {
   font-family: "Fura Code", serif;
   font-weight: 200;
   font-variant-ligatures: discretionary-ligatures;
-  color: #fbf1c7;
+    color: #ebdbb2;
 }
 
 p.thick {
@@ -80,7 +80,7 @@ blockquote {
   padding: 1.5em 0 0.5em;
   margin: 1.5em 0;
   position: relative;
-  color: #fbf1c7;
+    color: #ebdbb2;
 }
 
 blockquote:before {
@@ -132,7 +132,7 @@ blockquote:after {
 .nav-links,
 .logo {
   text-decoration: none;
-  color: #fbf1c7;
+    color: #ebdbb2;
 }
 
 .main-nav li {
@@ -162,7 +162,7 @@ ul li a.nav-links, ul li a.currPage {
   padding-right: 15px;
   margin-left: 0;
   margin-right: 0;
-  color: #fbf1c7;
+    color: #ebdbb2;
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
@@ -176,7 +176,7 @@ ul li a.nav-links {
 }
 
 h3, h2, h1 {
-  color: #fbf1c7;
+    color: #ebdbb2;
 }
 
 h1 {

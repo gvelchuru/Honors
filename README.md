@@ -1,2 +1,2 @@
-# gvelchuru.github.io
-Developer page
+# gvelchuru.github.io/Honors
+gvelchuru honors portfolio

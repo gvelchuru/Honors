@@ -75,6 +75,7 @@ p {
   font-weight: 200;
   font-variant-ligatures: discretionary-ligatures;
   color: $gb-dm-fg1;
+  font-size: 150%;
 }
 
 p.thick {
@@ -89,8 +90,8 @@ p.thick {
 }
 
 .container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #navMenu {
@@ -102,30 +103,28 @@ p.thick {
 a, a:hover {
   color: black;
   text-decoration: none;
+  font-size: 100%;
 }
 
 .faceimg {
   width: 100%;
 }
 
-.container-fluid {
-  padding: 70px 50px;
-}
-
 .row {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 blockquote {
   display: block;
-  border-width: 2px 0;
+  border-width: .5em 0;
   border-style: solid;
   border-color: $gb-dm-light-blue;
   padding: 1.5em 0 0.5em;
   margin: 1.5em 0;
   position: relative;
   color: $gb-dm-fg1;
+  font-size: 200%;
 }
 
 blockquote:before {
@@ -151,28 +150,30 @@ blockquote:after {
 }
 
 .navbar {
-  font-size: 16px;
-  font-family: "Fura Code", sans-serif;
-  //background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
   background-color: $gb-dm-bg1;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  padding-top: 8px;
   padding-bottom: 0;
   margin-bottom: 0;
   position: fixed;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
+  bottom: 0;
+  right: 0;
+  left: 0;
   padding-top: 0;
   border-top-width: 0;
   border-bottom-width: 0;
-  min-height: 22px;
+  height: 3em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 0;
 }
 
 .main-nav {
   list-style-type: none;
-  display: none;
+  display: flex;
+  margin-right: 20em;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 3em;
 }
 
 .nav-links,
@@ -183,34 +184,20 @@ blockquote:after {
 
 .main-nav li {
   text-align: center;
-  margin: 15px auto;
-}
-
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
 }
 
 %list-shared {
+  font-family: "Fura Code", sans-serif;
   display: block;
-  padding-left: 20px;
-  padding-right: 15px;
-  margin-left: 0;
-  margin-right: 0;
+  padding: 0 1.5em 0 2em;
   color: $gb-dm-fg1;
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  font-size: 2em;
+}
+
+ul {
+  margin: 0;
 }
 
 ul li a.currPage {
@@ -230,73 +217,25 @@ ul li a.nav-links {
 h1 {
   @extend %header-shared;
   font-weight: 600;
+  font-size: 4vw;
 }
 
 h2 {
   @extend %header-shared;
   font-weight: 500;
+  font-size: 2vw;
 }
 
 h3 {
   @extend %header-shared;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.5vw;
 }
 
-//ul li a.firstBot {
-//  @extend %list-shared;
-//  background-color: $gb-dm-bg2;
-//  padding-left:60px;
-//  padding-right:40px;
-//}
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: left;
-    padding-bottom: 0;
-    height: 20px;
-    align-items: center;
-    padding-top: 0;
-    border-top-width: 0;
-    border-bottom-width: 0;
-  }
-
-  .main-nav {
-    display: flex;
-    margin-right: 30px;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  .main-nav li {
-    margin: 0;
-    //background-image: url(crimeviz.png);
-    //background-color: $gb-dm-bg2;
-    //-webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-    //clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-  }
-
-  ul {
-    margin: 0;
-  }
-
-  .nav-links {
-    margin-left: 20px;
-    margin-right: 15px;
-  }
-
-  .logo {
-    margin-top: 0;
-  }
-
-  .navbar-toggle {
-    display: none;
-  }
-
-  .logo:hover,
-  .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
-  }
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .chevron {

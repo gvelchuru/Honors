@@ -82,20 +82,6 @@ blockquote {
     font-size: 200%;
 }
 
-blockquote:before {
-  content: "“";
-  position: absolute;
-  top: 0em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #282828;
-  width: 3rem;
-  height: 2rem;
-  font: 6em/1.08em "PT Sans", sans-serif;
-  color: #928374;
-  text-align: center;
-}
-
 blockquote:after {
   content: "– " attr(cite);
   display: block;

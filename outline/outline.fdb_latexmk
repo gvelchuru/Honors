@@ -1,15 +1,21 @@
 # Fdb version 3
-["pdflatex"] 1550457156 "outline.tex" "outline.pdf" "outline" 1550457156
+["pdflatex"] 1550464417 "outline.tex" "outline.pdf" "outline" 1550464417
+  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1543696176 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1543696176 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1543696176 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1543696176 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1543696176 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1543696176 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/tex/latex/base/article.cls" 1543696176 19823 fcbc01552b07b608574cbf8e1977e0c0 ""
   "/usr/share/texmf-dist/tex/latex/base/inputenc.sty" 1543696176 5052 f2525dfd6e503dc383e90b568c6c9f02 ""
+  "/usr/share/texmf-dist/tex/latex/base/omscmr.fd" 1543696176 2472 aa08940f0a4dc6c24ae9f943b04ae0b9 ""
   "/usr/share/texmf-dist/tex/latex/base/size10.clo" 1543696176 8294 b0f177401f895563eb19304d2389582d ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1543696176 33301 a3134070eacafb10b1f371612ce2650d ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1549940899 334148 1b9d30ff8c861d6082e3e9bfccd8d7eb ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1549940884 7910428 1008179f5f2bb5e2cb47dad5e7b971c9 ""
-  "outline.aux" 1550457156 8 a94a2480d3289e625eea47cd1b285758 ""
-  "outline.tex" 1550457154 89 30db43fca2f0435e0353c91e84052262 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1549821687 2842348 edc1b8bc31b681518c3c925a1db894a8 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1549821679 7910428 f4810dd2d45ebddab9e23658b4df7a6d ""
+  "outline.aux" 1550464417 535 de85c98813572deff1d79f48effd9754 ""
+  "outline.tex" 1550464407 2589 96e3b21cfacbd97e1c45e097804cbedd ""
   (generated)
-  "outline.log"
   "outline.aux"
   "outline.pdf"
+  "outline.log"

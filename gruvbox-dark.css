@@ -55,10 +55,18 @@ p.thick {
   width: 100%;
 }
 
-a, a:hover {
-  color: black;
+a {
+    color: #458588;
   text-decoration: none;
   font-size: 100%;
+}
+
+a:hover {
+    color: #83a598;
+}
+
+a:visited {
+    color: #b16286;
 }
 
 .faceimg {

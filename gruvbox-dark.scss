@@ -100,10 +100,18 @@ p.thick {
   width: 100%;
 }
 
-a, a:hover {
-  color: black;
+a {
+  color: $gb-dm-dark-blue;
   text-decoration: none;
   font-size: 100%;
+}
+
+a:hover {
+  color: $gb-dm-light-blue;
+}
+
+a:visited {
+  color: $gb-dm-dark-purple;
 }
 
 .faceimg {
